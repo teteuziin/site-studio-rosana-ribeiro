@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rosana Ribeiro Studio — Visagista especialista em cortes, mechas e megahair · Salvador</title>
+<meta name="description" content="Studio Rosana Ribeiro em São Caetano, Salvador. Cortes com visagismo, mechas, correção de cor e megahair. Corte + tratamento + finalização: R$ 287. Agende pelo direct.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --porcelain:#FAF6F0;
+  --porcelain-2:#F3EDE3;
+  --grout:#E3D9C8;
+  --ink:#26201B;
+  --ink-soft:#57504A;
+  --accent:#9E2B1E;
+  --accent-dark:#7E2015;
+  --white:#FFFFFF;
+  --radius:16px;
+  --font-d:"Playfair Display",Georgia,serif;
+  --font-b:"Archivo",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-b);background:var(--porcelain);color:var(--ink);line-height:1.6;font-size:16px;-webkit-font-smoothing:antialiased}
+img,video{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:4px}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+section{padding:96px 0}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);margin-bottom:16px}
+h1,h2{font-family:var(--font-d);font-weight:600;line-height:1.12;letter-spacing:.01em}
+h2{font-size:clamp(32px,4.4vw,48px);margin-bottom:16px}
+.lead{font-size:18px;color:var(--ink-soft);max-width:640px}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:var(--white);font-weight:600;font-size:16px;padding:16px 32px;border-radius:999px;text-decoration:none;border:2px solid var(--accent);transition:background .2s ease,transform .2s ease;cursor:pointer}
+.btn:hover{background:var(--accent-dark);border-color:var(--accent-dark)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:var(--white)}
+.btn.small{padding:12px 24px;font-size:15px}
+
+/* ---------- Wordmark (o letreiro) ---------- */
+.wordmark{text-decoration:none;line-height:1;display:inline-block}
+.wordmark .wm-name{font-family:var(--font-d);font-weight:600;font-size:27px;letter-spacing:.015em;color:var(--ink);display:block}
+.wordmark .wm-studio{font-family:var(--font-b);font-weight:600;font-size:10.5px;letter-spacing:.52em;text-transform:uppercase;color:var(--accent);display:block;margin-top:3px}
+.wordmark.light .wm-name{color:var(--white)}
+
+/* ---------- Header ---------- */
+header{position:sticky;top:0;z-index:60;background:rgba(250,246,240,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--grout)}
+.header-in{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-top:14px;padding-bottom:14px}
+nav.main{display:flex;gap:32px}
+nav.main a{text-decoration:none;font-weight:500;font-size:15px;color:var(--ink-soft)}
+nav.main a:hover{color:var(--accent)}
+@media(max-width:900px){nav.main{display:none}}
+
+/* ---------- Intro ---------- */
+#intro{position:fixed;inset:0;z-index:200;background:var(--porcelain);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;cursor:pointer;transition:opacity .45s ease}
+#intro.out{opacity:0;pointer-events:none}
+#intro .wm-name{font-size:clamp(38px,7vw,64px)}
+#intro .wm-studio{font-size:13px;text-align:center}
+#intro .scissors{font-size:28px;color:var(--accent);animation:snip 0.9s ease-in-out infinite alternate}
+@keyframes snip{from{transform:rotate(-8deg)}to{transform:rotate(10deg)}}
+#intro .skip{position:absolute;bottom:32px;font-size:13px;color:var(--ink-soft);letter-spacing:.14em;text-transform:uppercase}
+
+/* ---------- Hero ---------- */
+.hero{padding:72px 0 80px;position:relative;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(42px,5.6vw,68px);margin-bottom:24px}
+.hero h1 em{font-style:italic;color:var(--accent)}
+.hero .lead{margin-bottom:32px}
+.hero-ctas{display:flex;gap:16px;flex-wrap:wrap}
+.brick-frame{position:relative}
+.brick-frame::before{content:"";position:absolute;inset:0;transform:translate(16px,16px);border:1px solid var(--grout);border-radius:var(--radius);background:repeating-linear-gradient(0deg,var(--porcelain-2) 0 46px,var(--grout) 46px 47px),repeating-linear-gradient(90deg,var(--porcelain-2) 0 110px,var(--grout) 110px 111px);z-index:0}
+.brick-frame .frame-in{position:relative;z-index:1;border:1px solid var(--grout);border-radius:var(--radius);overflow:hidden;background:var(--ink)}
+.brick-frame video{width:100%;aspect-ratio:9/13.2;object-fit:cover}
+.hero-tag{position:absolute;z-index:2;left:24px;bottom:24px;background:var(--white);border:1px solid var(--grout);border-radius:999px;padding:8px 16px;font-size:13.5px;font-weight:600}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--grout);border:1px solid var(--grout);border-radius:var(--radius);overflow:hidden;margin-top:72px}
+.stat{background:var(--white);padding:28px 32px}
+.stat b{font-family:var(--font-d);font-size:36px;font-weight:700;display:block;line-height:1.05}
+.stat span{font-size:14.5px;color:var(--ink-soft)}
+@media(max-width:900px){
+  .hero-grid{grid-template-columns:1fr;gap:40px}
+  .stats{grid-template-columns:1fr}
+  section{padding:72px 0}
+}
+
+/* ---------- Section head ---------- */
+.sec-head{max-width:720px;margin-bottom:48px}
+
+/* ---------- Transformações ---------- */
+#transformacoes{background:var(--white);border-top:1px solid var(--grout);border-bottom:1px solid var(--grout)}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:40px}
+.chip{font-family:var(--font-b);font-size:14.5px;font-weight:600;padding:10px 20px;border-radius:999px;border:1.5px solid var(--grout);background:var(--porcelain);color:var(--ink-soft);cursor:pointer;transition:all .18s ease}
+.chip:hover{border-color:var(--ink)}
+.chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--white)}
+.wall{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+@media(min-width:901px){.wall .vcard:nth-child(3n+2){transform:translateY(32px)}.wall{padding-bottom:32px}}
+@media(max-width:900px){.wall{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.wall{grid-template-columns:1fr}}
+.vcard{border:1px solid var(--grout);border-radius:var(--radius);overflow:hidden;background:var(--porcelain);display:flex;flex-direction:column}
+.vcard.hide{display:none}
+.poster{position:relative;border:0;padding:0;background:none;cursor:pointer;width:100%;text-align:left}
+.poster img{width:100%;aspect-ratio:9/11;object-fit:cover}
+.poster .play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
+.poster .play i{width:64px;height:64px;border-radius:50%;background:rgba(250,246,240,.94);display:flex;align-items:center;justify-content:center;font-style:normal;font-size:22px;color:var(--accent);padding-left:4px;transition:transform .18s ease}
+.poster:hover .play i{transform:scale(1.1)}
+.vcard .vmedia video{width:100%;aspect-ratio:9/11;object-fit:cover;background:var(--ink)}
+.vcard .vbody{padding:20px 24px 24px}
+.vcard h3{font-family:var(--font-d);font-size:21px;font-weight:600;margin-bottom:6px}
+.vcard p{font-size:14.5px;color:var(--ink-soft)}
+.vtag{display:inline-block;font-size:11.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:8px}
+
+/* ---------- Serviços ---------- */
+.tabs{display:grid;grid-template-columns:320px 1fr;gap:32px;align-items:start}
+@media(max-width:900px){.tabs{grid-template-columns:1fr}}
+.tablist{display:flex;flex-direction:column;gap:8px}
+@media(max-width:900px){.tablist{flex-direction:row;overflow-x:auto;padding-bottom:8px}.tabbtn{white-space:nowrap}}
+.tabbtn{font-family:var(--font-b);text-align:left;font-size:16px;font-weight:600;padding:16px 20px;border-radius:12px;border:1px solid var(--grout);background:var(--white);color:var(--ink-soft);cursor:pointer;transition:all .18s ease}
+.tabbtn:hover{border-color:var(--ink)}
+.tabbtn[aria-selected="true"]{background:var(--ink);color:var(--white);border-color:var(--ink)}
+.tabpanel{background:var(--white);border:1px solid var(--grout);border-radius:var(--radius);padding:40px}
+.tabpanel h3{font-family:var(--font-d);font-size:28px;font-weight:600;margin-bottom:12px}
+.tabpanel p{color:var(--ink-soft);margin-bottom:16px;max-width:560px}
+.price{display:flex;align-items:baseline;gap:12px;background:var(--porcelain-2);border:1px dashed var(--accent);border-radius:12px;padding:20px 24px;margin:24px 0}
+.price b{font-family:var(--font-d);font-size:34px;color:var(--accent-dark)}
+.price span{font-weight:600}
+.tabpanel .note{font-size:14.5px}
+.tab-video{max-width:360px;margin-top:24px;border:1px solid var(--grout);border-radius:var(--radius);overflow:hidden;background:var(--ink)}
+.tab-video .vmedia video{width:100%;aspect-ratio:9/11;object-fit:cover;background:var(--ink)}
+.tab-cap{margin-top:12px;max-width:360px}
+
+/* ---------- Quem é ---------- */
+#rosana{background:var(--ink);color:var(--porcelain)}
+#rosana .eyebrow{color:#E8A294}
+#rosana .lead{color:#D8CFC4}
+.rosana-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
+@media(max-width:900px){.rosana-grid{grid-template-columns:1fr}}
+.cutout-stage{position:relative;border-radius:var(--radius);overflow:hidden;background:repeating-linear-gradient(0deg,#33291F 0 46px,#2A211A 46px 47px),repeating-linear-gradient(90deg,#33291F 0 110px,#2A211A 110px 111px);min-height:480px;display:flex;align-items:flex-end;justify-content:center}
+.cutout-stage img{width:min(88%,430px);margin-top:40px;filter:drop-shadow(0 18px 28px rgba(0,0,0,.45))}
+.rosana-video{margin-top:32px}
+.rosana-video .vcard{background:#33291F;border-color:#4A3B2E;color:var(--porcelain)}
+.rosana-video .vcard p{color:#D8CFC4}
+.sig{font-family:var(--font-d);font-style:italic;font-size:24px;margin-top:24px;color:var(--porcelain)}
+
+/* ---------- Depoimentos ---------- */
+.depo-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+@media(max-width:900px){.depo-grid{grid-template-columns:1fr}}
+.carousel{position:relative;background:var(--white);border:1px solid var(--grout);border-radius:var(--radius);padding:40px;min-height:280px}
+.carousel blockquote{font-family:var(--font-d);font-size:clamp(20px,2.4vw,25px);line-height:1.45;font-weight:500}
+.carousel .src{margin-top:20px;font-size:14px;color:var(--ink-soft);font-weight:600;letter-spacing:.06em;text-transform:uppercase}
+.car-nav{display:flex;align-items:center;gap:16px;margin-top:28px}
+.car-btn{width:48px;height:48px;border-radius:50%;border:1.5px solid var(--grout);background:var(--porcelain);font-size:18px;cursor:pointer;color:var(--ink)}
+.car-btn:hover{border-color:var(--ink)}
+.dots{display:flex;gap:8px}
+.dots button{width:10px;height:10px;border-radius:50%;border:0;background:var(--grout);cursor:pointer;padding:0}
+.dots button[aria-current="true"]{background:var(--accent)}
+
+/* ---------- Agendamento ---------- */
+#agendar{background:var(--white);border-top:1px solid var(--grout)}
+.agenda-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:start}
+@media(max-width:900px){.agenda-grid{grid-template-columns:1fr}}
+.pick{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 28px}
+.pick .chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--white)}
+.cta-box{background:var(--porcelain);border:1px solid var(--grout);border-radius:var(--radius);padding:32px}
+.cta-box p{font-size:17px;margin-bottom:20px}
+.cta-box p b{color:var(--accent-dark)}
+.addr-card{border:1px solid var(--grout);border-radius:var(--radius);padding:32px;background:var(--porcelain)}
+.addr-card h3{font-family:var(--font-d);font-size:24px;margin-bottom:8px}
+.addr-card p{color:var(--ink-soft);margin-bottom:20px}
+.addr-actions{display:flex;flex-direction:column;gap:12px}
+.addr-actions a{display:flex;justify-content:space-between;align-items:center;text-decoration:none;font-weight:600;padding:16px 20px;border:1px solid var(--grout);border-radius:12px;background:var(--white)}
+.addr-actions a:hover{border-color:var(--ink)}
+.addr-actions a span{color:var(--ink-soft);font-weight:500;font-size:14.5px}
+.hours{padding-top:20px;border-top:1px solid var(--grout);margin-bottom:20px}
+.hours h4{font-family:var(--font-d);font-size:19px;font-weight:600;margin-bottom:8px}
+.hours p{display:flex;justify-content:space-between;gap:16px;margin-bottom:4px}
+.hours p b{color:var(--ink);font-weight:600;white-space:nowrap}
+
+/* ---------- Footer ---------- */
+footer{background:var(--ink);color:var(--porcelain);padding:64px 0 40px}
+.foot-in{display:flex;justify-content:space-between;gap:32px;flex-wrap:wrap;align-items:flex-start}
+footer a{color:#E8A294;text-decoration:none;font-weight:600}
+footer .fine{margin-top:40px;padding-top:24px;border-top:1px solid #4A3B2E;font-size:13.5px;color:#B7AA9C}
+
+/* ---------- Reveal ---------- */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  .reveal{opacity:1;transform:none;transition:none}
+  #intro .scissors{animation:none}
+  .wall .vcard{transform:none!important}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap header-in">
+    <a class="wordmark" href="#top" aria-label="Rosana Ribeiro Studio — início">
+      <span class="wm-name">Rosana Ribeiro</span>
+      <span class="wm-studio">Studio</span>
+    </a>
+    <nav class="main" aria-label="Navegação principal">
+      <a href="#transformacoes">Transformações</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#rosana">Quem é a Rosana</a>
+      <a href="#depoimentos">Depoimentos</a>
+      <a href="#agendar">Onde estou</a>
+    </nav>
+    <a class="btn small" href="https://www.instagram.com/studiorosanaribeiro/" target="_blank" rel="noopener">Agendar pelo direct</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <p class="eyebrow">Visagista · São Caetano, Salvador</p>
+          <h1>Você só precisa de <em>um corte</em>.</h1>
+          <p class="lead">Sou Rosana Ribeiro, visagista especialista em cortes, mechas e megahair. Antes da tesoura, eu estudo o seu momento de vida, o formato do seu rosto e a estrutura do seu fio — é assim que o corte certo nasce.</p>
+          <div class="hero-ctas">
+            <a class="btn" href="https://www.instagram.com/studiorosanaribeiro/" target="_blank" rel="noopener">Agendar pelo direct</a>
+            <a class="btn ghost" href="#transformacoes">Ver transformações</a>
+          </div>
+        </div>
+        <div class="brick-frame">
+          <div class="frame-in">
+            <video id="heroVideo" src="media/02-viral-360.mp4" poster="media/posters/02-viral-360.jpg" autoplay muted loop playsinline aria-label="Vídeo: transformação de cabelo longo para Chanel ondulado"></video>
+          </div>
+          <span class="hero-tag">17 mil curtidas neste corte ✂️</span>
+        </div>
+      </div>
+      <div class="stats reveal">
+        <div class="stat"><b>+20 mil</b><span>mulheres atendidas</span></div>
+        <div class="stat"><b>4,6 ★</b><span>nota no Google · 56 avaliações</span></div>
+        <div class="stat"><b>79 mil</b><span>seguidoras no Instagram</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TRANSFORMAÇÕES -->
+  <section id="transformacoes">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="eyebrow">Portfólio real</p>
+        <h2>Transformações de verdade, feitas aqui</h2>
+        <p class="lead">Nada de banco de imagem: cada vídeo abaixo é um atendimento real aqui do studio. Aperta o play e ouve — tem a explicação, o processo e a reação de quem sentou na cadeira.</p>
+      </div>
+      <div class="filters" role="group" aria-label="Filtrar transformações">
+        <button class="chip" data-filter="all" aria-pressed="true">Todas</button>
+        <button class="chip" data-filter="corte" aria-pressed="false">Cortes</button>
+        <button class="chip" data-filter="cor" aria-pressed="false">Cor e mechas</button>
+        <button class="chip" data-filter="megahair" aria-pressed="false">Megahair</button>
+        <button class="chip" data-filter="cachos" aria-pressed="false">Cachos e crespos</button>
+      </div>
+      <div class="wall" id="wall">
+
+        <article class="vcard reveal" data-cat="corte">
+          <div class="vmedia" data-src="media/01-simbolo-carol.mp4" data-poster="media/posters/01-simbolo-carol.jpg" data-label="Vídeo: transformação da Carol, do longo ao Chanel e ao Pixie"></div>
+          <div class="vbody">
+            <span class="vtag">Corte · Visagismo</span>
+            <h3>Da Carol: longo → Chanel → Pixie</h3>
+            <p>A transformação em dois tempos que virou o símbolo do studio: consultoria completa, referência, formato do rosto e coragem de mudar. 214 comentários num post só.</p>
+          </div>
+        </article>
+
+        <article class="vcard reveal" data-cat="corte">
+          <div class="vmedia" data-src="media/03-curtinho-franja.mp4" data-poster="media/posters/03-curtinho-franja.jpg" data-label="Vídeo: curtinho Chanel com franja"></div>
+          <div class="vbody">
+            <span class="vtag">Corte</span>
+            <h3>Curtinho com franja e movimento</h3>
+            <p>Chanel curtinho com volume e franja — 120 comentários em um dia. É o corte que mais pedem por aqui.</p>
+          </div>
+        </article>
+
+        <article class="vcard reveal" data-cat="megahair">
+          <div class="vmedia" data-src="media/05-megahair-tape-in.mp4" data-poster="media/posters/05-megahair-tape-in.jpg" data-label="Vídeo: aplicação de megahair com fita adesiva, passo a passo"></div>
+          <div class="vbody">
+            <span class="vtag">Megahair</span>
+            <h3>Megahair tape-in, passo a passo</h3>
+            <p>“Desejo da cliente: alongar os fios.” Aplicação de fita adesiva do começo ao resultado longo e volumoso — sorriso no rosto de quem não precisa esperar o cabelo crescer.</p>
+          </div>
+        </article>
+
+        <article class="vcard reveal" data-cat="cor">
+          <div class="vmedia" data-src="media/06-cor-bege-dourado.mp4" data-poster="media/posters/06-cor-bege-dourado.jpg" data-label="Vídeo: transformação de cor, do castanho escuro ao bege dourado"></div>
+          <div class="vbody">
+            <span class="vtag">Cor</span>
+            <h3>Do castanho ao bege dourado</h3>
+            <p>Correção de cor com mechas sutis, sem descoloração total. Nas palavras da cliente: “nasceu pra ser loira”.</p>
+          </div>
+        </article>
+
+        <article class="vcard reveal" data-cat="cor">
+          <div class="vmedia" data-src="media/07-balayage-7-anos.mp4" data-poster="media/posters/07-balayage-7-anos.jpg" data-label="Vídeo: balayage loira em cliente atendida há sete anos"></div>
+          <div class="vbody">
+            <span class="vtag">Mechas</span>
+            <h3>Balayage de quem confia há 7 anos</h3>
+            <p>Processo com papelotes e resultado em balayage loira multidimensional, com ondas grandes. Cliente fiel há sete anos.</p>
+          </div>
+        </article>
+
+        <article class="vcard reveal" data-cat="corte">
+          <div class="vmedia" data-src="media/12-blunt-cut-taina.mp4" data-poster="media/posters/12-blunt-cut-taina.jpg" data-label="Vídeo: blunt cut na Taina, do longo ao bob reto"></div>
+          <div class="vbody">
+            <span class="vtag">Corte</span>
+            <h3>Blunt cut da Taina</h3>
+            <p>Do longo ao bob reto com pontas cheias e volume. Mais que um corte, um reposicionamento — cliente fiel há cinco anos.</p>
+          </div>
+        </article>
+
+        <article class="vcard reveal" data-cat="cachos">
+          <div class="vmedia" data-src="media/14-sem-alongamento.mp4" data-poster="media/posters/14-sem-alongamento.jpg" data-label="Vídeo: cabelo natural com mechas caramelo valorizado com corte"></div>
+          <div class="vbody">
+            <span class="vtag">Cachos e naturais</span>
+            <h3>Sem alongamento: o dela, valorizado</h3>
+            <p>Cabelo natural longo, com mechas caramelo, valorizado só com corte — franja feita pela Ludmila, da minha equipe. No final, a cliente conta o que achou.</p>
+          </div>
+        </article>
+
+        <article class="vcard reveal" data-cat="cachos">
+          <div class="vmedia" data-src="media/22-rosana-cacheadas.mp4" data-poster="media/posters/22-rosana-cacheadas.jpg" data-label="Vídeo: cliente cacheada sendo finalizada no studio"></div>
+          <div class="vbody">
+            <span class="vtag">Cachos e crespos</span>
+            <h3>Cacheadas têm espaço especial aqui</h3>
+            <p>“Nossas cacheadas maravilhosas sempre com um espaço especial em nosso studio.” Corte, tratamento e finalização pensados para a textura do seu fio.</p>
+          </div>
+        </article>
+
+        <article class="vcard reveal" data-cat="corte">
+          <div class="vmedia" data-src="media/04-camadas-clavicula.mp4" data-poster="media/posters/04-camadas-clavicula.jpg" data-label="Vídeo: camadas na altura da clavícula em cabelo ondulado longo"></div>
+          <div class="vbody">
+            <span class="vtag">Corte</span>
+            <h3>Camadas na clavícula</h3>
+            <p>Consulta, plano do corte e resultado com ondas volumosas — o atendimento completo, do jeito que acontece aqui todos os dias.</p>
+          </div>
+        </article>
+
+        <article class="vcard reveal" data-cat="corte">
+          <div class="vmedia" data-src="media/08-chanel-salao.mp4" data-poster="media/posters/08-chanel-salao.jpg" data-label="Vídeo: corte Chanel completo, mostrando o studio por dentro"></div>
+          <div class="vbody">
+            <span class="vtag">Corte · O studio por dentro</span>
+            <h3>“Vamos fazer um Chanel??”</h3>
+            <p>O corte completo, do cabelo molhado à finalização — e você ainda vê o studio por dentro: a parede de tijolinhos, o espelho redondo e o letreiro onde tudo acontece.</p>
+          </div>
+        </article>
+
+        <article class="vcard reveal" data-cat="corte">
+          <div class="vmedia" data-src="media/13-dona-lieti.mp4" data-poster="media/posters/13-dona-lieti.jpg" data-label="Vídeo: repaginada da Dona Lieti, com retoque de raiz e corte desconectado para dar volume"></div>
+          <div class="vbody">
+            <span class="vtag">Corte</span>
+            <h3>A repaginada da Dona Lieti</h3>
+            <p>Cabelo fino e ralo também tem jeito: teste de mechas, retoque de raiz e corte desconectado para devolver volume — cuidado técnico em qualquer idade.</p>
+          </div>
+        </article>
+
+        <article class="vcard reveal" data-cat="corte">
+          <div class="vmedia" data-src="media/15-butterfly-consultoria.mp4" data-poster="media/posters/15-butterfly-consultoria.jpg" data-label="Vídeo: Rosana explica à cliente por que o corte Butterfly valoriza mais que o corte reto"></div>
+          <div class="vbody">
+            <span class="vtag">Corte · Consultoria</span>
+            <h3>Por que Butterfly, e não corte reto?</h3>
+            <p>Na consultoria, eu explico para a cliente por que o corte reto não valoriza o fio dela — e por que as camadas do Butterfly, sim. É o visagismo acontecendo ao vivo.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section id="servicos">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="eyebrow">Serviços</p>
+        <h2>O que eu faço por você</h2>
+        <p class="lead">Escolha um serviço e veja como ele funciona aqui. Preço fechado, só o do corte — os outros dependem do seu fio, e eu te passo na avaliação, sem compromisso.</p>
+      </div>
+      <div class="tabs reveal">
+        <div class="tablist" role="tablist" aria-label="Serviços do studio">
+          <button class="tabbtn" role="tab" id="tab-cortes" aria-controls="panel-cortes" aria-selected="true" data-tab="cortes">Cortes com visagismo</button>
+          <button class="tabbtn" role="tab" id="tab-cor" aria-controls="panel-cor" aria-selected="false" data-tab="cor" tabindex="-1">Mechas, balayage e correção de cor</button>
+          <button class="tabbtn" role="tab" id="tab-megahair" aria-controls="panel-megahair" aria-selected="false" data-tab="megahair" tabindex="-1">Megahair tape-in</button>
+          <button class="tabbtn" role="tab" id="tab-cachos" aria-controls="panel-cachos" aria-selected="false" data-tab="cachos" tabindex="-1">Cachos e crespos</button>
+          <button class="tabbtn" role="tab" id="tab-consultoria" aria-controls="panel-consultoria" aria-selected="false" data-tab="consultoria" tabindex="-1">Consultoria de visagismo</button>
+          <button class="tabbtn" role="tab" id="tab-completo" aria-controls="panel-completo" aria-selected="false" data-tab="completo" tabindex="-1">Studio completo</button>
+          <button class="tabbtn" role="tab" id="tab-cursos" aria-controls="panel-cursos" aria-selected="false" data-tab="cursos" tabindex="-1">Cursos para profissionais</button>
+        </div>
+        <div>
+          <div class="tabpanel" role="tabpanel" id="panel-cortes" aria-labelledby="tab-cortes">
+            <h3>Cortes com visagismo</h3>
+            <p>Chanel, Pixie, Butterfly, blunt cut, camadas: o corte é desenhado para o seu rosto, o seu temperamento e o seu momento de vida — não é cópia de foto. O pacote já inclui o tratamento e a finalização, para você sair daqui pronta.</p>
+            <div class="price"><b>R$ 287</b><span>corte + tratamento + finalização</span></div>
+            <p class="note">É só me chamar no direct e a gente marca o seu horário.</p>
+          </div>
+          <div class="tabpanel" role="tabpanel" id="panel-cor" aria-labelledby="tab-cor" hidden>
+            <h3>Mechas, balayage e correção de cor</h3>
+            <p>Balayage, morena iluminada, loiras e correção de cor para quem quer mudar sem destruir o fio — com mechas sutis e sem descoloração total quando o seu cabelo pede esse cuidado.</p>
+            <p class="note">O valor depende do comprimento, da quantidade de fio e do ponto de partida da cor. Me chama no direct que eu avalio e te passo o orçamento.</p>
+          </div>
+          <div class="tabpanel" role="tabpanel" id="panel-megahair" aria-labelledby="tab-megahair" hidden>
+            <h3>Megahair tape-in</h3>
+            <p>Alongamento com fita adesiva pelo meu método Visage Invisible: aplicação passo a passo, resultado longo e volumoso com acabamento natural — para você não precisar esperar o cabelo crescer para se sentir linda.</p>
+            <p class="note">A avaliação define quantidade de telas e o valor. A gente conversa no direct.</p>
+          </div>
+          <div class="tabpanel" role="tabpanel" id="panel-cachos" aria-labelledby="tab-cachos" hidden>
+            <h3>Cachos e crespos</h3>
+            <p>Cabelo com textura é especialidade da casa: corte pensado para o cacho, tratamento e protocolos de crescimento. “Fui simplesmente para escovar e ela viu o devido valor dos meus cachos” — é o que dizem as clientes.</p>
+            <p class="note">Corte para cacheadas entra no mesmo pacote do corte com tratamento e finalização. Me chama no direct.</p>
+          </div>
+          <div class="tabpanel" role="tabpanel" id="panel-consultoria" aria-labelledby="tab-consultoria" hidden>
+            <h3>Consultoria de visagismo</h3>
+            <p>Presencial ou online: eu analiso o seu momento de vida, o formato do seu rosto, o seu temperamento e a estrutura do seu fio, e desenho o corte (e a cor) que combinam com você — antes de qualquer tesoura.</p>
+            <p class="note">Ideal para quem quer mudar, mas ainda não sabe para onde. Chama no direct que eu te explico como funciona.</p>
+          </div>
+          <div class="tabpanel" role="tabpanel" id="panel-completo" aria-labelledby="tab-completo" hidden>
+            <h3>Studio completo</h3>
+            <p>Além do cabelo: alisamento e soltura de cachos, sobrancelhas, cílios, unhas e spa dos pés. Um dia de beleza inteiro num lugar só, com a minha equipe — a Ludmila e a May cuidam de você comigo.</p>
+            <div class="tab-video">
+              <div class="vmedia" data-src="media/19-dia-de-beleza-collab.mp4" data-poster="media/posters/19-dia-de-beleza-collab.jpg" data-label="Vídeo: dia de beleza completo da Gaby Bacelar no studio, com unhas, sobrancelha, coloração e spa dos pés"></div>
+            </div>
+            <p class="tab-cap">A Gaby Bacelar veio passar um dia de beleza completo aqui no studio — aperta o play e vê como é.</p>
+            <p class="note">Valores na avaliação, pelo direct.</p>
+          </div>
+          <div class="tabpanel" role="tabpanel" id="panel-cursos" aria-labelledby="tab-cursos" hidden>
+            <h3>Cursos para profissionais</h3>
+            <p>Eu também ensino quem vive de cabelo: dou a Imersão de Corte da PG Cosméticos — a próxima edição é no dia 23/11/2026 — com os cortes que mais pedem no salão: Chanel, Butterfly e Pixie, e o raciocínio de visagismo por trás de cada um.</p>
+            <div class="tab-video">
+              <div class="vmedia" data-src="media/20-imersao-de-corte.mp4" data-poster="media/posters/20-imersao-de-corte.jpg" data-label="Vídeo: Rosana anuncia a Imersão de Corte da PG Cosméticos"></div>
+            </div>
+            <p class="tab-cap">Eu mesma te conto, neste vídeo, como é a Imersão de Corte.</p>
+            <p class="note">É profissional da beleza? Me chama no direct para saber das próximas turmas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUEM É A ROSANA -->
+  <section id="rosana">
+    <div class="wrap">
+      <div class="rosana-grid">
+        <div class="cutout-stage reveal">
+          <img src="media/rosana-recorte.png" alt="Rosana Ribeiro, de blazer branco, sorrindo — foto recortada sem fundo">
+        </div>
+        <div class="reveal">
+          <p class="eyebrow">Quem é a Rosana</p>
+          <h2>Prazer, eu sou a Rosana</h2>
+          <p class="lead">Visagista, dona do studio e a pessoa que vai te atender do começo ao fim: sou eu que respondo as mensagens, estudo o seu cabelo, corto e te entrego o espelho.</p>
+          <p style="margin-top:16px;color:#D8CFC4">Meu trabalho começa antes da tesoura: eu olho o seu momento de vida, o formato do seu rosto, o seu temperamento e a estrutura do seu fio. É por isso que tem cliente que confia em mim há cinco, sete anos — e é por isso que eu também ensino outros profissionais a cortar com esse olhar.</p>
+          <div class="rosana-video">
+            <article class="vcard">
+              <div class="vmedia" data-src="media/10-institucional-visagismo.mp4" data-poster="media/posters/10-institucional-visagismo.jpg" data-label="Vídeo: Rosana explica a consultoria de visagismo"></div>
+              <div class="vbody">
+                <span class="vtag">Direto da fonte</span>
+                <h3>Como funciona a minha consultoria</h3>
+                <p>Neste vídeo eu explico, com transformações reais rodando, como desenho um corte para cada mulher.</p>
+              </div>
+            </article>
+          </div>
+          <p class="sig">— Rosana Ribeiro</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section id="depoimentos">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="eyebrow">Quem já sentou na cadeira</p>
+        <h2>O que dizem de mim</h2>
+      </div>
+      <div class="depo-grid">
+        <div class="carousel reveal" aria-roledescription="carrossel" aria-label="Avaliações do Google">
+          <blockquote id="quoteText">“Encontrei essa maravilhosa através do Instagram e não me arrependo da escolha. Amei o trabalho de Rosana, o acolhimento dela, o atendimento em geral, o espaço. É tudo muito lindo e muito harmonioso. Toda equipe é nota 10.”</blockquote>
+          <p class="src" id="quoteSrc">Avaliação no Google ★★★★★</p>
+          <div class="car-nav">
+            <button class="car-btn" id="carPrev" aria-label="Depoimento anterior">←</button>
+            <div class="dots" id="carDots" role="tablist" aria-label="Escolher depoimento"></div>
+            <button class="car-btn" id="carNext" aria-label="Próximo depoimento">→</button>
+          </div>
+        </div>
+        <article class="vcard reveal">
+          <div class="vmedia" data-src="media/11-depoimento-megahair-cacheado.mp4" data-poster="media/posters/11-depoimento-megahair-cacheado.jpg" data-label="Vídeo: depoimento de cliente sobre o megahair cacheado"></div>
+          <div class="vbody">
+            <span class="vtag">Depoimento em vídeo</span>
+            <h3>“Não preciso esperar meu cabelo crescer para me sentir bonita”</h3>
+            <p>Uma cliente em tratamento de tricotilomania conta, ela mesma, o que o alongamento cacheado fez por ela. 360 comentários de apoio neste post.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- AGENDAR / ONDE ESTOU -->
+  <section id="agendar">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="eyebrow">Agendamento</p>
+        <h2>Bora marcar o seu horário?</h2>
+        <p class="lead">Escolhe o que você quer fazer — eu já te digo como me chamar:</p>
+      </div>
+      <div class="agenda-grid">
+        <div class="reveal">
+          <div class="pick" id="servicePick" role="group" aria-label="Escolher serviço">
+            <button class="chip" data-service="um corte com visagismo" aria-pressed="true">Corte</button>
+            <button class="chip" data-service="mechas / balayage" aria-pressed="false">Mechas</button>
+            <button class="chip" data-service="uma correção de cor" aria-pressed="false">Correção de cor</button>
+            <button class="chip" data-service="megahair tape-in" aria-pressed="false">Megahair</button>
+            <button class="chip" data-service="cuidar dos meus cachos" aria-pressed="false">Cachos</button>
+            <button class="chip" data-service="uma consultoria de visagismo" aria-pressed="false">Consultoria</button>
+          </div>
+          <div class="cta-box">
+            <p>Me chama no direct do Instagram e fala assim: <b>“Rosana, quero <span id="pickEcho">um corte com visagismo</span>!”</b> Eu mesma respondo, avalio o seu fio e a gente marca.</p>
+            <a class="btn" href="https://www.instagram.com/studiorosanaribeiro/" target="_blank" rel="noopener">Chamar no direct agora</a>
+          </div>
+        </div>
+        <div class="addr-card reveal">
+          <h3>Onde fica o studio</h3>
+          <p>Estrada de Campinas, 416 — São Caetano<br>Salvador/BA</p>
+          <div class="hours">
+            <h4>Horário de funcionamento</h4>
+            <p><span>Segunda a quinta</span><b>9h às 18h</b></p>
+            <p><span>Sexta e sábado</span><b>8h às 19h</b></p>
+          </div>
+          <div class="addr-actions">
+            <a href="https://maps.app.goo.gl/XDGfVuLnsVeQUaec6?g_st=ic" target="_blank" rel="noopener">Como chegar <span>abrir no Maps →</span></a>
+            <a href="tel:+557132133690">Ligar para o studio <span>(71) 3213-3690</span></a>
+            <a href="https://www.instagram.com/studiorosanaribeiro/" target="_blank" rel="noopener">Instagram <span>@studiorosanaribeiro</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-in">
+      <a class="wordmark light" href="#top" aria-label="Rosana Ribeiro Studio">
+        <span class="wm-name">Rosana Ribeiro</span>
+        <span class="wm-studio">Studio</span>
+      </a>
+      <div>
+        <p style="margin-bottom:8px">Transformações reais, todos os dias:</p>
+        <a href="https://www.instagram.com/studiorosanaribeiro/" target="_blank" rel="noopener">@studiorosanaribeiro</a>
+      </div>
+    </div>
+    <p class="fine">Studio Rosana Ribeiro · São Caetano, Salvador/BA · Fotos e vídeos reais publicados no Instagram do studio.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+  var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  /* ---------- Intro (criada via JS: sem JS, sem intro) ---------- */
+  if(!reduced && !sessionStorage.getItem("rr-intro")){
+    var intro = document.createElement("div");
+    intro.id = "intro";
+    intro.setAttribute("role","button");
+    intro.setAttribute("aria-label","Pular abertura");
+    intro.innerHTML = '<div class="scissors" aria-hidden="true">✂️</div>' +
+      '<span class="wordmark"><span class="wm-name">Rosana Ribeiro</span><span class="wm-studio">Studio</span></span>' +
+      '<span class="skip">Toque para entrar</span>';
+    document.body.appendChild(intro);
+    document.body.style.overflow = "hidden";
+    var dismiss = function(){
+      if(!intro.parentNode) return;
+      intro.classList.add("out");
+      document.body.style.overflow = "";
+      sessionStorage.setItem("rr-intro","1");
+      setTimeout(function(){ if(intro.parentNode) intro.parentNode.removeChild(intro); }, 500);
+    };
+    intro.addEventListener("click", dismiss);
+    setTimeout(dismiss, 1750);
+  }
+
+  /* ---------- Vídeos: pôster -> player com som ---------- */
+  var playing = [];
+  function stopOthers(current){
+    playing.slice().forEach(function(v){ if(v !== current){ v.pause(); } });
+  }
+  document.querySelectorAll(".vmedia").forEach(function(box){
+    var src = box.getAttribute("data-src");
+    var poster = box.getAttribute("data-poster");
+    var label = box.getAttribute("data-label") || "Vídeo do studio";
+    var btn = document.createElement("button");
+    btn.className = "poster";
+    btn.setAttribute("aria-label", "Assistir: " + label);
+    btn.innerHTML = '<img src="' + poster + '" alt="" loading="lazy"><span class="play"><i aria-hidden="true">▶</i></span>';
+    box.appendChild(btn);
+    btn.addEventListener("click", function(){
+      var v = document.createElement("video");
+      v.src = src; v.poster = poster; v.controls = true; v.playsInline = true;
+      v.setAttribute("aria-label", label);
+      box.innerHTML = ""; box.appendChild(v);
+      playing.push(v);
+      v.addEventListener("play", function(){ stopOthers(v); });
+      v.play().catch(function(){});
+    });
+  });
+
+  /* ---------- Pausa fora da tela (nunca retoma sozinho) ---------- */
+  if("IntersectionObserver" in window){
+    var vio = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.intersectionRatio < 0.25 && !e.target.paused) e.target.pause();
+      });
+    }, {threshold: [0, 0.25, 0.5]});
+    var watchVideos = function(){
+      document.querySelectorAll("video").forEach(function(v){
+        if(v.id === "heroVideo") return;
+        if(!v.dataset.watched){ v.dataset.watched = "1"; vio.observe(v); }
+      });
+    };
+    watchVideos();
+    new MutationObserver(watchVideos).observe(document.body, {childList: true, subtree: true});
+
+    /* Hero: autoplay mudo pode retomar ao voltar para a tela */
+    var hero = document.getElementById("heroVideo");
+    if(hero){
+      if(reduced){ hero.removeAttribute("autoplay"); hero.pause(); }
+      new IntersectionObserver(function(entries){
+        entries.forEach(function(e){
+          if(e.intersectionRatio >= 0.25){ if(!reduced) hero.play().catch(function(){}); }
+          else hero.pause();
+        });
+      }, {threshold: [0, 0.25]}).observe(hero);
+    }
+
+    /* ---------- Reveal ---------- */
+    var rio = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add("in"); rio.unobserve(e.target); } });
+    }, {threshold: 0.12});
+    document.querySelectorAll(".reveal").forEach(function(el){ rio.observe(el); });
+    /* Rede de segurança: nada fica invisível se o observer não disparar */
+    setTimeout(function(){
+      document.querySelectorAll(".reveal").forEach(function(el){ el.classList.add("in"); });
+    }, 2500);
+  } else {
+    document.querySelectorAll(".reveal").forEach(function(el){ el.classList.add("in"); });
+  }
+
+  /* ---------- Filtros das transformações ---------- */
+  var chips = document.querySelectorAll(".filters .chip");
+  chips.forEach(function(chip){
+    chip.addEventListener("click", function(){
+      chips.forEach(function(c){ c.setAttribute("aria-pressed","false"); });
+      chip.setAttribute("aria-pressed","true");
+      var f = chip.getAttribute("data-filter");
+      document.querySelectorAll("#wall .vcard").forEach(function(card){
+        var show = (f === "all" || card.getAttribute("data-cat") === f);
+        card.classList.toggle("hide", !show);
+      });
+    });
+  });
+
+  /* ---------- Abas de serviços ---------- */
+  var tabBtns = Array.prototype.slice.call(document.querySelectorAll(".tabbtn"));
+  function activateTab(btn){
+    tabBtns.forEach(function(b){
+      var on = (b === btn);
+      b.setAttribute("aria-selected", on ? "true" : "false");
+      b.tabIndex = on ? 0 : -1;
+      document.getElementById(b.getAttribute("aria-controls")).hidden = !on;
+    });
+  }
+  tabBtns.forEach(function(btn, i){
+    btn.addEventListener("click", function(){ activateTab(btn); });
+    btn.addEventListener("keydown", function(ev){
+      var j = null;
+      if(ev.key === "ArrowDown" || ev.key === "ArrowRight") j = (i + 1) % tabBtns.length;
+      if(ev.key === "ArrowUp" || ev.key === "ArrowLeft") j = (i - 1 + tabBtns.length) % tabBtns.length;
+      if(j !== null){ ev.preventDefault(); activateTab(tabBtns[j]); tabBtns[j].focus(); }
+    });
+  });
+
+  /* ---------- Carrossel de depoimentos ---------- */
+  var quotes = [
+    {t:"“Encontrei essa maravilhosa através do Instagram e não me arrependo da escolha. Amei o trabalho de Rosana, o acolhimento dela, o atendimento em geral, o espaço. É tudo muito lindo e muito harmonioso. Toda equipe é nota 10.”", s:"Avaliação no Google ★★★★★"},
+    {t:"“Rosana Ribeiro é a melhor cabeleireira que eu conheço, entrego meu cabelo para ela de olhos fechados pois confio plenamente na profissional, ela é de primeira linha!”", s:"Avaliação no Google ★★★★★"},
+    {t:"“Fui simplesmente para escovar e ela viu o devido valor dos meus cachos. Trabalho surreal, a equipe em si coloca qualquer mulher com a auto estima lá em cima.”", s:"Avaliação no Google ★★★★★"},
+    {t:"“Cuido do meu cabelo há um ano com ela, e amo.”", s:"Avaliação no Google ★★★★★"},
+    {t:"“E assim nasce uma nova mulher.”", s:"Comentário de seguidora no Instagram"}
+  ];
+  var qi = 0, qText = document.getElementById("quoteText"), qSrc = document.getElementById("quoteSrc"), dotsBox = document.getElementById("carDots");
+  quotes.forEach(function(_, i){
+    var d = document.createElement("button");
+    d.setAttribute("aria-label", "Depoimento " + (i + 1));
+    d.setAttribute("aria-current", i === 0 ? "true" : "false");
+    d.addEventListener("click", function(){ showQuote(i); });
+    dotsBox.appendChild(d);
+  });
+  function showQuote(i){
+    qi = (i + quotes.length) % quotes.length;
+    qText.textContent = quotes[qi].t;
+    qSrc.textContent = quotes[qi].s;
+    Array.prototype.forEach.call(dotsBox.children, function(d, j){ d.setAttribute("aria-current", j === qi ? "true" : "false"); });
+  }
+  document.getElementById("carPrev").addEventListener("click", function(){ showQuote(qi - 1); });
+  document.getElementById("carNext").addEventListener("click", function(){ showQuote(qi + 1); });
+
+  /* ---------- Escolha do serviço no agendamento ---------- */
+  var pickBtns = document.querySelectorAll("#servicePick .chip");
+  var echo = document.getElementById("pickEcho");
+  pickBtns.forEach(function(b){
+    b.addEventListener("click", function(){
+      pickBtns.forEach(function(x){ x.setAttribute("aria-pressed","false"); });
+      b.setAttribute("aria-pressed","true");
+      echo.textContent = b.getAttribute("data-service");
+    });
+  });
+})();
+</script>
+</body>
+</html>
